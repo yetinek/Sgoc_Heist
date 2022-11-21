@@ -1,6 +1,10 @@
 # Sgoc_Heist
 
 
+Sgoc heist create by  xMikussTVx#2040, ShinyX#6507, yeti#5380
+
+
+
 ```lua
 	['sgoc_opaska'] = {
 		label = 'Opaska SGOC',
