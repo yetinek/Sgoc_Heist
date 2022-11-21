@@ -1,1 +1,40 @@
 # Sgoc_Heist
+
+
+```lua
+	['sgoc_opaska'] = {
+		label = 'Opaska SGOC',
+	},
+
+	['bobcat_door_explosives'] = {
+		label = 'Termit',
+	},
+
+	['bob_hack_1'] = {
+		label = 'Cerb-C100',
+	},
+
+	['bob_hack_2'] = {
+		label = 'Cerb-9',
+	},
+
+	['bob_key'] = {
+		label = 'klucze',
+	},
+
+	['bob_doorcard'] = {
+		label = 'Karta',
+	},
+
+	['bob_prototype_1'] = {
+		label = 'Prototym lunety',
+	},
+
+	['bob_prototype_2'] = {
+		label = 'Prototym pocisku',
+	},
+
+	['bob_prototype_3'] = {
+		label = 'prototyp magazynku',
+	},
+  ```
