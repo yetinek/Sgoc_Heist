@@ -26,6 +26,14 @@ Sgoc heist create by  xMikussTVx#2040, ShinyX#6507, yeti#5380
 		label = 'klucze',
 	},
 
+	['sgoc_bomb'] = {
+		label = 'bomba',
+	},
+
+	['bob_plans'] = {
+		label = 'bomba',
+	},
+
 	['bob_doorcard'] = {
 		label = 'Karta',
 	},
