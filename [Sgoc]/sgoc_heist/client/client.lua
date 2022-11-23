@@ -794,6 +794,8 @@ RegisterNetEvent('fc-safeitem')
 AddEventHandler('fc-safeitem', function()
     if power == true and kameryoff == true and key == true then
     TriggerServerEvent('fc-safebomba')
+    else
+        ESX.ShowNotification('Nie możesz tego zrobić')
     end
 end)
 
