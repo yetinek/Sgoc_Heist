@@ -5,7 +5,7 @@ local computerhack = false
 local radiotroll = false
 local pcoff = false
 local safecheck = false
-local termit = true
+local termit = false
 local key = false
 local elektryk = false
 local kamery = false
@@ -211,7 +211,7 @@ exports.qtarget:AddCircleZone("door2sgoc", vector3(880.98, -2264.67, 30.57), 0.7
 				icon = "fas fa-bomb",
 				label = "Otwórz",
                 canInteract = function()
-                    return termit == true
+                    return termit
                 end,
 			},
 		},
@@ -769,7 +769,6 @@ end)
 
 RegisterNetEvent('fc-safe')
 AddEventHandler('fc-safe', function()
-if power == true and kameryoff == true and key == true then
     local playerPed = PlayerPedId()
     TriggerServerEvent('fc-safebomb')
     SetEntityHeading(playerPed, 82.6527)
@@ -785,17 +784,14 @@ if power == true and kameryoff == true and key == true then
     Citizen.Wait(1000)
     ESX.ShowNotification('Ładunki są gotowe do wysadzenia')
     safecheck = true
-    else 
-        ESX.ShowNotification('Nie możesz tego zrobić')
-    end
 end)
 
 RegisterNetEvent('fc-safeitem')
 AddEventHandler('fc-safeitem', function()
-    if power == true and kameryoff == true and key == true then
+    if power == false and kameryoff == false and key == false then
     TriggerServerEvent('fc-safebomba')
     else
-        ESX.ShowNotification('Nie możesz tego zrobić')
+        esx.ShowNotification('Nie możesz tego zrobić')
     end
 end)
 
@@ -970,7 +966,7 @@ RegisterNetEvent('fc-bomb1')
 AddEventHandler('fc-bomb1', function()
     
     local playerPed = PlayerPedId()
-    termit = false
+    termit = true
     troll3 = true
     TriggerServerEvent('fc-bombcheck')
     SetEntityHeading(playerPed, 172.2080)
