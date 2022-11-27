@@ -3,6 +3,8 @@
 
 Sgoc heist create by  xMikussTVx#2040, ShinyX#6507, yeti#5380, Nieznajomy#4485
 
+Fix drzwi 
+
 [Yeti](https://github.com/yetinek) 			[xMikussTVx](https://github.com/Front-End-xMikussTVx)				[Nieznajomy#4485](https://github.com/Nieznajomy333)
 
 
